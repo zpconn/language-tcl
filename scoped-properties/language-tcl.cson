@@ -1,0 +1,6 @@
+'.source.tcl':
+  'editor':
+    'increaseIndentPattern': '\\{[^"\'}]*$'
+'.source.antlr':
+  'editor':
+    'foldEndPattern': '^\\s*\\}'
