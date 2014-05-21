@@ -59,7 +59,7 @@
       }
       {
         'comment': 'switch for regexp'
-        'match': '-\\w+\\s*'
+        'match': '-\\[^-\\]\\w*\\s*'
       }
       {
         'applyEndPatternLast': 1
