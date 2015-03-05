@@ -1,5 +1,9 @@
 'fileTypes': [
   'tcl'
+  'tm'
+  'plugin'
+  'stf'
+  'test'
 ]
 'firstLineMatch': '^#!/.*\\btclsh\\b'
 'name': 'Tcl'
@@ -51,7 +55,7 @@
       '1':
         'name': 'keyword.other.tcl'
     'comment': 'special-case regexp/regsub keyword in order to handle the expression'
-    'end': '[\\n;]|(?=\\])'
+    'end': '[\\n;\\]]'
     'patterns': [
       {
         'match': '\\\\(?:.|\\n)'
@@ -59,11 +63,11 @@
       }
       {
         'comment': 'switch for regexp'
-        'match': '-\\[^-\\]\\w*\\s*'
+        'match': '-\\w+\\s*'
       }
       {
         'applyEndPatternLast': 1
-        'begin': '--\\s*'
+        'begin': '--\\s*\\w+'
         'comment': 'end of switches'
         'end': ''
         'patterns': [
@@ -171,7 +175,7 @@
     ]
   'regexp':
     'begin': '(?=\\S)(?![\\n;\\]])'
-    'comment': 'matches a single word, named as a regexp, then swallows the rest of the command'
+    'comment': 'matches a single word, named as a regexp, then swallows the rest of the command'            
     'end': '(?=[\\n;\\]])'
     'patterns': [
       {
@@ -191,6 +195,9 @@
           {
             'include': '#variable'
           }
+          {
+            'include': '#string'
+          }        
         ]
       }
       {
@@ -211,8 +218,8 @@
             'include': '#braces'
           }
           {
-            'include': '#string'
-          }
+            'include': '#inner-braces'
+          }          
         ]
       }
     ]
