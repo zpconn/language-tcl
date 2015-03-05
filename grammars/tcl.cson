@@ -1,9 +1,5 @@
 'fileTypes': [
   'tcl'
-  'tm'
-  'plugin'
-  'stf'
-  'test'
 ]
 'firstLineMatch': '^#!/.*\\btclsh\\b'
 'name': 'Tcl'
