@@ -23,7 +23,7 @@
     'captures':
       '1':
         'name': 'keyword.control.tcl'
-    'match': '(?<=^|[\\[{;])\\s*(if|while|for|catch|return|break|continue|switch|exit|foreach)\\b'
+    'match': '(?<=^|[\\[{;])\\s*(if|while|for|catch|return|break|continue|switch|exit|foreach|dict)\\b'
   }
   {
     'captures':
@@ -43,7 +43,7 @@
     'captures':
       '1':
         'name': 'keyword.other.tcl'
-    'match': '(?<=^|[\\[{;])\\s*(after|append|array|auto_execok|auto_import|auto_load|auto_mkindex|auto_mkindex_old|auto_qualify|auto_reset|bgerror|binary|cd|clock|close|concat|dde|encoding|eof|error|eval|exec|expr|fblocked|fconfigure|fcopy|file|fileevent|filename|flush|format|gets|glob|global|history|http|incr|info|interp|join|lappend|library|lindex|linsert|list|llength|load|lrange|lreplace|lsearch|lset|lsort|memory|msgcat|namespace|open|package|parray|pid|pkg::create|pkg_mkIndex|proc|puts|pwd|re_syntax|read|registry|rename|resource|scan|seek|set|socket|SafeBase|source|split|string|subst|Tcl|tcl_endOfWord|tcl_findLibrary|tcl_startOfNextWord|tcl_startOfPreviousWord|tcl_wordBreakAfter|tcl_wordBreakBefore|tcltest|tclvars|tell|time|trace|unknown|unset|update|uplevel|upvar|variable|vwait)\\b'
+    'match': '(?<=^|[\\[{;])\\s*(after|append|array|auto_execok|auto_import|auto_load|auto_mkindex|auto_mkindex_old|auto_qualify|auto_reset|bgerror|binary|cd|clock|close|concat|dde|encoding|eof|error|eval|exec|expr|fblocked|fconfigure|fcopy|file|fileevent|filename|flush|format|gets|glob|global|history|http|incr|info|interp|join|lappend|library|lindex|linsert|list|llength|load|lrange|lrepeat|lreplace|lreverse|lsearch|lset|lsort|memory|msgcat|namespace|open|package|parray|pid|pkg::create|pkg_mkIndex|proc|puts|pwd|re_syntax|read|registry|rename|resource|scan|seek|set|socket|SafeBase|source|split|string|subst|Tcl|tcl_endOfWord|tcl_findLibrary|tcl_startOfNextWord|tcl_startOfPreviousWord|tcl_wordBreakAfter|tcl_wordBreakBefore|tcltest|tclvars|tell|time|trace|unknown|unset|update|uplevel|upvar|variable|vwait)\\b'
   }
   {
     'begin': '(?<=^|[\\[{;])\\s*(regexp|regsub)\\b\\s*'
@@ -171,7 +171,7 @@
     ]
   'regexp':
     'begin': '(?=\\S)(?![\\n;\\]])'
-    'comment': 'matches a single word, named as a regexp, then swallows the rest of the command'            
+    'comment': 'matches a single word, named as a regexp, then swallows the rest of the command'
     'end': '(?=[\\n;\\]])'
     'patterns': [
       {
@@ -193,7 +193,7 @@
           }
           {
             'include': '#string'
-          }        
+          }
         ]
       }
       {
@@ -215,7 +215,7 @@
           }
           {
             'include': '#inner-braces'
-          }          
+          }
         ]
       }
     ]
