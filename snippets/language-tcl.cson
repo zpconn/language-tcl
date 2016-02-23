@@ -21,3 +21,21 @@
   'while...':
     'prefix': 'while'
     'body': 'while {${1:condition}} {\n\t${2}\n}\n'
+  'dict...':
+    'prefix': 'dict'
+    'body': 'dict ${1:command dictionary_name key? value?}\n'
+  'array...':
+    'prefix': 'array'
+    'body': 'array ${1:command array_name key?}\n'
+  'lrepeat...':
+    'prefix': 'lrepeat'
+    'body': 'lrepeat ${1:count element?}\n'
+  'lreverse...':
+    'prefix': 'lreverse'
+    'body': 'lreverse ${1:list}\n'
+  'lreplace...':
+    'prefix': 'lreplace'
+    'body': 'lreplace ${1:list first last ?element element ...?}\n'
+  'lrange...':
+    'prefix': 'lrange'
+    'body': 'lrange ${1:list first last}\n'
