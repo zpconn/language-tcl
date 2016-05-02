@@ -1,9 +1,9 @@
 {
   "name": "language-tcl",
-  "version": "0.1.3",
+  "version": "0.1.2",
   "private": true,
   "description": "Syntax highlighting for Tcl",
-  "repository": "https://github.com/dzolli/language-tcl",
+  "repository": "https://github.com/zpconn/language-tcl",
   "license": "MIT",
   "engines": {
     "atom": ">0.50.0"
