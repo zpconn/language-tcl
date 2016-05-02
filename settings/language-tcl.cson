@@ -1,6 +1,11 @@
 '.source.tcl':
   'editor':
-    'increaseIndentPattern': '\\{[^"\'}]*$'
-'.source.antlr':
-  'editor':
-    'foldEndPattern': '^\\s*\\}'
+    'commentStart': '#'
+    'foldEndPattern': '^\\s*\\}|^\\s*\\]'
+    'increaseIndentPattern': '(?x)
+        \\{ [^}"\']* $
+      | \\[ [^\\]"\']* $
+      '
+    'decreaseIndentPattern': '(?x)
+        ^ \\s* (\\s* /[*] .* [*]/ \\s*)* [}\\]]
+      '
