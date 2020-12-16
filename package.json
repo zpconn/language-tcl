@@ -3,7 +3,7 @@
   "version": "0.1.2",
   "private": true,
   "description": "Syntax highlighting for Tcl",
-  "repository": "https://github.com/zpconn/language-tcl",
+  "repository": "https://github.com/dacieri/language-tcl",
   "license": "MIT",
   "engines": {
     "atom": ">0.50.0"
