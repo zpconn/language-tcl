@@ -1,5 +1,5 @@
 {
-  "name": "language-tcl",
+  "name": "language-tcl-new",
   "version": "0.3.6",
   "private": true,
   "description": "Syntax highlighting for Tcl",
