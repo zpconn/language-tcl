@@ -1,6 +1,6 @@
 {
   "name": "language-tcl-new",
-  "version": "0.3.6",
+  "version": "0.3.7",
   "private": true,
   "description": "Syntax highlighting for Tcl",
   "repository": "https://github.com/dacieri/language-tcl",
